@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <style>
+    img {
+      /* width: 100%; */
+    }
+    .holiday-heading {
+      max-width: 1116px;
+      /* max-width: 1116px; */
+      /* height: 13.61rem; */
+      text-align: center;
+      width: 77.5vw;
+      margin: 0 auto;
+    }
+
+    .intro_sect {
+      background: url(./assets/images/graphic.png) no-repeat 50% 100%;
+      background: url(./assets/images/sec_introBg.png) no-repeat 50% 100%;
+      background-size: 100% auto;
+      background-size: cover;
+      padding-top: 40px;
+      height: 100%;
+      height: 922px;
+    }
+    .top-banner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 3.8887rem;
+      line-height: 3.8887rem;
+      font-size: 1.555rem;
+      font-family: "YeogiOttaeJalnan";
+      text-align: center;
+      background: #ff8aab;
+      color: #fff;
+    }
+    .btn_first {
+      width: 132px;
+      height: 42px;
+      margin-right: 20px;
+      /* align-self: center; */
+      font-size: 0;
+      line-height: 70px;
+      background: url(./assets/images/first_btn.svg) no-repeat 0 100%;
+      background-size: 100% 100%;
+    }
+    .highlight {
+      position: relative;
+      position: relative;
+      color: #fffe8d;
+      /* font-size: 2.53vw; */
+      background: url(./assets/images/top_underline.svg) no-repeat 0 100%;
+      margin: 0 0.5rem;
+    }
+    .top-banner-text {
+      /* max-width: 66.6667rem; */
+      /* margin: 0 auto; */
+    }
+    header {
+      max-width: var(--content-width);
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+    }
+    .logo {
+      margin-right: auto;
+    }
+    .btn_login {
+      font-size: 16px;
+      line-height: 18px;
+      padding: 10px 20px;
+      border: 1px solid;
+      border-radius: 100px;
+      box-sizing: border-box;
+    }
+    .ci {
+      margin-left: 1.329rem;
+    }
+
+    .quick_menu {
+      position: absolute;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      right: 0;
+      top: 16rem;
+      right: 2.55rem;
+      width: 7.86rem;
+      height: 15.5rem;
+    }
+    .quick_link {
+      font-size: 0;
+    }
+
+    .holiday-section {
+      position: relative;
+      width: 100%;
+      height: 59vw;
+      max-height: 845px;
+      /* height: 45.278rem; */
+      /* margin-bottom: 30px; */
+      /* margin-bottom: 1.67rem; */
+      background: url(./assets/images/holidday2.png);
+      background-position: 100%;
+      background-size: auto;
+      background-repeat: no-repeat;
+    }
+    .holiday-section img {
+      width: 100%;
+    }
+    .brand_sect {
+      padding-top: 298px;
+      padding-bottom: 128px;
+      background: #b0eeaf;
+    }
+    .bubble-wrap {
+      position: relative;
+      width: 74.5vw;
+      max-width: 1126px;
+      max-height: 595px;
+      height: 39.6vw;
+      background: url(./assets/images/newspaper_bg.png);
+      background-position: center center;
+      background-size: auto;
+      margin: 0 auto;
+      background-repeat: no-repeat;
+    }
+    .bubble {
+      position: absolute;
+      font-size: 0;
+      opacity: 0;
+      transform: translateY(25px) scale(0.9);
+      transition:
+        opacity 0.5s ease,
+        transform 0.5s ease;
+    }
+    .bubble.show {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+    .bubble.news1 {
+      width: 38vw;
+      max-width: 520px;
+      top: 11%;
+      right: -11.2%;
+    }
+
+    .bubble.news2 {
+      display: block;
+      width: 32.5rem;
+      width: 38vw;
+      height: 100%;
+      max-width: 550px;
+      top: 37%;
+      left: -19%;
+    }
+    .bubble.news2::before {
+      position: absolute;
+      content: "";
+      top: -16%;
+      left: 12%;
+      width: 10rem;
+      width: 16%;
+      height: 10rem;
+      background: url(./assets/images/news_character01.svg);
+      background-repeat: no-repeat;
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      z-index: -1;
+    }
+    .bubble.news3 {
+      width: 38vw;
+      max-width: 667px;
+      right: -11%;
+      bottom: -4%;
+    }
+
+    .bubble.news3::before {
+      position: absolute;
+      content: "";
+      top: 34.1%;
+      left: 68%;
+      width: 17.25rem;
+      width: 55%;
+      width: 20.5vw;
+      max-width: 310px;
+      height: 13.7rem;
+      background: url(./assets/images/news_character02.svg);
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      z-index: 2;
+    }
+    .video_sect {
+      padding-top: 77px;
+    }
+    .video-heading {
+      width: 71.4vw;
+      /* margin-bottom: 70px; */
+      text-align: center;
+      margin: 0 auto;
+    }
+  </style>
+  <body>
+    <main class="">
+      <!--  -->
+      <div class="top-banner">
+        <button type="button" class="btn_first">선착순</button>
+        <div class="top-banner-text">
+          초코 회원이라면 <span class="highlight">누구나 무료! </span> 지금 신청
+          <span class="arrow"><img src="./assets/images/arrow.svg" alt="" /></span>
+        </div>
+      </div>
+      <section class="intro_sect">
+        <section class="sect_inner"></section>
+        <header>
+          <h1 class="logo" target="_blank"><img src="./assets/images/logo.svg" alt="" /></h1>
+          <button type="button" class="btn_login" target="_blank">로그인</button>
+          <div class="ci" target="_blank"><img src="./assets/images/ci.svg" alt="" /></div>
+        </header>
+        <aside class="quick_menu">
+          <a class="quick_link" href="#section01">계기교육 안내</a>
+          <a class="quick_link" href="#">초코타임 미리보기</a>
+          <a class="quick_link" href="#">커리큘럼과목</a>
+          <a class="quick_link" href="#">산청하기</a>
+          <a class="quick_link" href="#">TOP</a>
+        </aside>
+      </section>
+      <!-- NEWS & FORM  -->
+      <section id="section01" class="brand_sect">
+        <div class="sect_inner">
+          <section class="holiday-section">
+            <h2 class="holiday-heading"><img class="" src="./assets/images/news_tle.png" alt="" /></h2>
+            <div class="bubble-wrap">
+              <div class="bubble news1">
+                3명 중 1명은 별다른 추모나<br />
+                기념을 하지 않아...
+                <img class="" src="./assets/images/news_item01.svg" alt="" />
+              </div>
+
+              <div class="bubble news2">
+                현충일이 뭐 하는 날인지도 모르고<br />
+                그냥 노는 날이라 기뻐요
+                <img class="" src="./assets/images/news_item02.svg" alt="" />
+              </div>
+
+              <div class="bubble news3">
+                호국영령? 그게 뭐예요?
+                <img class="" src="./assets/images/news_item03.svg" alt="" />
+              </div>
+            </div>
+          </section>
+          <form action="" method="post">
+            <div class="form-panel">
+              <fieldset class="form-group">
+                <legend class="form-title">주로 사용하는 퍼블리싱 기술/환경을 선택해주세요. (복수선택 가능)</legend>
+                <ul class="form-options--chk">
+                  <li class="form-option">
+                    <span class="">
+                      <input type="checkbox" name="" value="1" id="skill01" />
+                      <label for="skill01">HTML5</label>
+                    </span>
+                  </li>
+                  <li class="form-option">
+                    <span class="">
+                      <input type="checkbox" name="" value="1" id="skill02" />
+                      <label for="skill02">CSS</label>
+                    </span>
+                  </li>
+                  <li class="form-option">
+                    <span class="">
+                      <input type="checkbox" name="" value="1" id="skill03" />
+                      <label for="skill03">JavaScript</label>
+                    </span>
+                  </li>
+                  <li class="form-option">
+                    <span class="">
+                      <input type="checkbox" name="" value="1" id="skill04" />
+                      <label for="skill04">jQuery</label>
+                    </span>
+                  </li>
+                  <li class="form-option">
+                    <span class="">
+                      <input type="checkbox" name="" value="1" id="skill05" />
+                      <label for="skill05">React</label>
+                    </span>
+                  </li>
+                  <li class="form-option">
+                    <span class="">
+                      <input type="checkbox" name="" value="1" id="skill06" />
+                      <label for="skill06">Vue</label>
+                    </span>
+                  </li>
+                  <li class="form-option">
+                    <span class="">
+                      <input type="checkbox" name="" value="1" id="skill07" />
+                      <label for="skill07">Figma</label>
+                    </span>
+                  </li>
+                  <li class="form-option">
+                    <span class="">
+                      <input type="checkbox" name="" value="1" id="skill08" />
+                      <label for="skill08">Phothoshop</label>
+                    </span>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="form-group">
+                <legend class="form-title">가장 자신 있는 퍼블리싱 영역은 무엇인가요?</legend>
+                <ul class="form-options--radio">
+                  <li class="form-option">
+                    <input type="radio" name="area" value="1" id="area01" />
+                    <label for="area01">반응형 웹</label>
+                  </li>
+                  <li class="form-option">
+                    <input type="radio" name="area" value="1" id="area02" />
+                    <label for="area02">프로모션/이벤트 페이지</label>
+                  </li>
+                  <li class="form-option">
+                    <input type="radio" name="area" value="1" id="area03" />
+                    <label for="area03">UI컴포넌트/디자인 시스템</label>
+                  </li>
+                  <li class="form-option">
+                    <input type="radio" name="area" value="1" id="area04" />
+                    <label for="area04">CSS 애니메이션/인터랙션</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="form-group">
+                <legend class="form-title">
+                  포트폴리오 또는 대표 작업물 URL을 작성해 주세요.
+                  <span class="form-desc">퍼블리싱한 웹사이트 주소를 작성해주세요.</span>
+                </legend>
+                <div class="form-input_box">
+                  <input type="url" id="portfolio" name="portfolio" class="form-input" placeholder=" Ex. 중학 국어 2-1(신유식)" />
+                </div>
+              </fieldset>
+              <fieldset class="form-option">
+                <legend class="form-title">
+                  이번 퍼블리싱 과제를 진행하면서 가장 신경 쓴 부분이나 어필하고 싶은 점을 적어주세요.
+                  <span class="form-desc">마크업 구조, 반응형 처리 방식, CSS 구조화 등 자유롭게 작성해 주세요.</span>
+                </legend>
+
+                <div class="form-textarea_box">
+                  <textarea class="form-textarea" name="" id="" maxlength="2000" placeholder=" "></textarea>
+                  <span class="fomr_texarea-count">0/2,000</span>
+                </div>
+              </fieldset>
+            </div>
+
+            <button type="submit" class="form-submit">지원하기</button>
+          </form>
+        </div>
+      </section>
+      <!-- 비디오 -->
+      <section class="video_sect">
+        <div class="sect_inner">
+          <h2 class="video-heading"><img class="" src="./assets/images/video_tle.png" alt="" /></h2>
+          <div class="video-card">
+            <!-- <img class="video-card__poster" src="./assets/images/video_thumb.png" alt="" /> -->
+            <img class="video-card__clip" src="clip.png" alt="" />
+
+            <button class="video-card__btn" type="button" aria-label="영상 재생">▶</button>
+          </div>
+        </div>
+      </section>
+      <!-- 교과목 -->
+      <section>
+        <div class="tab-box-wrap">
+          <div class="tab-menu_wrap">
+            <ul class="">
+              <li>국어</li>
+              <li>수학</li>
+              <li>사회</li>
+              <li>과학</li>
+            </ul>
+          </div>
+          <!-- 탭 콘텐츠 -->
+          <div class="tab-content_wrap swiper">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">국어 콘텐츠</li>
+              <li class="swiper-slide">수학 콘텐츠</li>
+              <li class="swiper-slide">사회 콘텐츠</li>
+              <li class="swiper-slide">과학 콘텐츠</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- 초코타임 -->
+      <section></section>
+      <!-- NOTICE -->
+      <section></section>
+    </main>
+
+    <script>
+      // bubble
+      document.addEventListener("DOMContentLoaded", () => {
+        const section = document.querySelector(".holiday-section");
+        const bubbles = document.querySelectorAll(".bubble");
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                bubbles.forEach((bubble, index) => {
+                  setTimeout(() => {
+                    bubble.classList.add("show");
+                  }, index * 400);
+                });
+
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          {
+            threshold: 0.4,
+          },
+        );
+
+        observer.observe(section);
+      });
+
+      // tab + swiper
+      document.addEventListener("DOMContentLoaded", () => {
+        const tabMenus = document.querySelectorAll(".tab-menu_wrap li");
+
+        // 0 ~ 3 랜덤
+        const randomIndex = Math.floor(Math.random() * tabMenus.length);
+
+        const swiper = new Swiper(".tab-content_wrap", {
+          slidesPerView: 1,
+          spaceBetween: 0,
+
+          // 최초 랜덤 슬라이드
+          initialSlide: randomIndex,
+
+          on: {
+            init(swiper) {
+              setActiveTab(swiper.activeIndex);
+            },
+
+            slideChange(swiper) {
+              setActiveTab(swiper.activeIndex);
+            },
+          },
+        });
+
+        // 탭 클릭 → Swiper 이동
+        tabMenus.forEach((menu, index) => {
+          menu.addEventListener("click", () => {
+            swiper.slideTo(index);
+          });
+        });
+
+        // 활성화 탭 처리
+        function setActiveTab(index) {
+          tabMenus.forEach((menu, i) => {
+            menu.classList.toggle("active", i === index);
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

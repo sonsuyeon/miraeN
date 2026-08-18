@@ -1,0 +1,336 @@
+@import url(../css/font.css);
+@import url(../css/reset.css);
+
+html {
+  font-size: 18px;
+}
+img {
+  width: 100%;
+}
+form {
+  max-width: var(--content-width);
+  margin: 0 auto;
+}
+.form-panel {
+  width: 100%;
+  margin: 0 auto;
+  padding: 4.44445rem 3.33325rem;
+  margin-bottom: 2.775rem;
+  background: #fff;
+  background-image: url("../images/form01.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  box-sizing: border-box;
+}
+.MiraeN {
+}
+:root {
+  --content-width: 66.6667rem;
+
+  /* color */
+  --color-primary: #ff6f91;
+  --color-text: #333;
+  --color-white: #fff;
+
+  /* layout */
+  --content-width: 1200px;
+
+  /* font */
+  --font-base: "Pretendard", sans-serif;
+
+  /* radius */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+}
+.sect_inner {
+  max-width: var(--content-width);
+  margin: 0 auto;
+}
+
+.video_sect {
+  background: #fdd7e3;
+}
+body {
+  color: var(--color-text);
+  font-family: var(--font-base);
+}
+
+.inner {
+  width: 100%;
+  max-width: var(--content-width);
+  margin: 0 auto;
+}
+.form-title {
+  font-size: 1.77775rem;
+  /* font-size: 1.27775rem; */
+  font-weight: bold;
+  font-family: "GMarketSans";
+  word-break: keep-all;
+  margin-bottom: 1.777rem;
+  letter-spacing: -0.071rem;
+}
+.form-title .form-desc {
+  margin-left: 0.44rem;
+}
+.form-desc {
+  font-size: 1.11rem;
+  font-weight: normal;
+}
+.form-option:last-of-type .form-desc {
+  display: block;
+  font-size: 1.33rem;
+  margin-left: 0;
+}
+.form-group {
+  padding-bottom: 44px;
+  margin-bottom: 44px;
+  /* border-bottom: 1px solid #9e9e9e; */
+  background: url(../images/form-divide.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.form-list {
+}
+.form-options--chk {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 840px;
+  font-size: 1.333rem;
+  gap: 0.88rem;
+}
+.form-options--radio {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  font-size: 1.333rem;
+  gap: 0 1.333rem;
+}
+.form-options--chk .form-option {
+  position: relative;
+  max-width: 11rem;
+  width: 100%;
+  width: 11rem;
+  height: 2.7rem;
+}
+.form-options--radio .form-option {
+}
+.form-group:first-child {
+}
+.form-option-ipn {
+}
+@media (max-width: 1199.98px) {
+  html {
+    font-size: 16px;
+  }
+}
+/* input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"] + label {
+  display: block;
+  content: "";
+  width: 11rem;
+  height: 2.7rem;
+  border: 1px solid;
+  cursor: pointer;
+}
+input[type="checkbox"] + label:before {
+  display: none;
+}
+input[type="checkbox"]:checked + label {
+  display: block;
+  content: "";
+  width: 11rem;
+  height: 2.7rem;
+  border: 1px solid saddlebrown;
+  background: #ddd;
+}
+input[type="checkbox"] + label::after {
+  transition: all 0.5s;
+}
+input[type="checkbox"]:checked + label::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 11rem;
+  height: 2.7rem;
+  top: 0;
+  left: 0;
+  color: aquamarine;
+  background: blue;
+  background-size: 100% 100%;
+} */
+/* checkbox / radio 기본 UI 숨김 */
+input[type="checkbox"],
+input[type="radio"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+input[type="checkbox"]:checked {
+  /* 체크됐을 때 label 디자인 */
+}
+input[type="checkbox"]:checked + label {
+  /* 체크됐을 때 label 디자인 */
+}
+.form-option input[type="checkbox"] + label {
+  display: block;
+  width: 11rem;
+  height: 2.7rem;
+  line-height: 2.7rem;
+  border: 1px solid #666666;
+  border-radius: 50px;
+  cursor: pointer;
+  text-align: center;
+}
+.form-option input[type="checkbox"]:checked + label {
+  font-weight: 700;
+  color: #02a39f;
+  background: rgba(2, 163, 159, 0.1);
+  border-color: #02a39f;
+}
+.form-option input[type="radio"] {
+  position: relative;
+  display: flex;
+  width: 11rem;
+  height: 2.7rem;
+  line-height: 2.7rem;
+  border: 1px solid #666666;
+  border-radius: 50px;
+  cursor: pointer;
+  text-align: center;
+}
+.form-option input[type="radio"] + label {
+}
+.form-option input[type="radio"]:checked + label {
+}
+
+.form-input::placeholder {
+  color: #c3c3c3;
+}
+.form-input_box {
+  width: 26.71rem;
+  height: 3.32rem;
+  background-image: url("../images/form-inpBox.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+.form-input {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0 1.217rem;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+.form-textarea_box {
+  position: relative;
+  width: 100%;
+  height: 12.15rem;
+}
+.form-textarea {
+  width: 100%;
+  height: 100%;
+  padding: 1rem 1.217rem;
+  background: #fff;
+  background-image: url("../images/form-textareaBox.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  box-sizing: border-box;
+  outline: 0;
+  border: 0;
+}
+.fomr_texarea-count {
+  position: absolute;
+  font-size: 1.09rem;
+  color: #555555;
+  bottom: 1rem;
+  right: 1.217rem;
+}
+.form-submit {
+  display: block;
+  width: 31.2rem;
+  height: 5.55rem;
+  font-family: "GMarketSans";
+  font-size: 2.775rem;
+  font-weight: 700;
+  color: #333333;
+  background: #fded7c;
+  border: 1.5px solid #333333;
+  border-radius: 99999px;
+  box-shadow: 0 4px 0 0 rgba(51, 51, 51, 1);
+  margin: 0 auto;
+}
+
+/* video */
+.video_sect {
+}
+.video-card {
+  position: relative;
+  width: 82vw;
+  max-width: 1169px;
+  height: 83vw;
+  /* max-height: 940px; */
+  background-image: url(../images/videoBoxBg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.video-card__btn {
+  position: absolute;
+  background-image: url("../images/btn_play.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  box-sizing: border-box;
+}
+/* tab */
+.tab-menu_wrap ul {
+  display: flex;
+}
+
+.tab-menu_wrap li {
+  cursor: pointer;
+  width: 186px;
+}
+
+.tab-menu_wrap li.active {
+  /* 선택된 탭 스타일 */
+  font-weight: 700;
+}
+
+.tab-content_wrap .tab-content {
+  /* display: none; */
+}
+
+.tab-content_wrap .tab-content.active {
+  /* display: block; */
+}
+.tab-content_wrap > ul > li {
+  /* display: none; */
+}
+
+.tab-content_wrap > ul > li.active {
+  /* display: block; */
+}
+.tab-menu_wrap li.active {
+  background: #f5a623;
+  color: #fff;
+}
+.tab-content_wrap {
+  overflow: hidden;
+}
+
+.tab-content_wrap .swiper-slide {
+  width: 100%;
+}
