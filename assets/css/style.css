@@ -7,22 +7,7 @@ html {
 img {
   width: 100%;
 }
-form {
-  max-width: var(--content-width);
-  margin: 0 auto;
-}
-.form-panel {
-  width: 100%;
-  margin: 0 auto;
-  padding: 4.44445rem 3.33325rem;
-  margin-bottom: 2.775rem;
-  background: #fff;
-  background-image: url("../images/form01.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-  box-sizing: border-box;
-}
+
 .MiraeN {
 }
 :root {
@@ -61,6 +46,174 @@ body {
   max-width: var(--content-width);
   margin: 0 auto;
 }
+
+/* intro_sect */
+.intro_sect {
+  background: url(../images/graphic.png) no-repeat 50% 100%;
+  /* background: url(../images/sec_introBg.png) no-repeat 50% 100%; */
+  background-size: 100% auto;
+  background-size: cover;
+  padding-top: 40px;
+  height: 100%;
+  height: 922px;
+}
+header {
+  max-width: var(--content-width);
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+.logo {
+  margin-right: auto;
+}
+.btn_login {
+  font-size: 16px;
+  line-height: 18px;
+  padding: 10px 20px;
+  border: 1px solid;
+  border-radius: 100px;
+  box-sizing: border-box;
+}
+.ci {
+  margin-left: 1.329rem;
+}
+.quick_menu {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  right: 0;
+  top: 16rem;
+  right: 2.55rem;
+  width: 7.86rem;
+  height: 15.5rem;
+}
+.quick_link {
+  font-size: 0;
+}
+
+/* brand_sect */
+.brand_sect {
+  padding-top: 20.55vw;
+  padding-bottom: 128px;
+  background: #b0eeaf;
+}
+.holiday-section {
+  position: relative;
+  width: 100%;
+  height: 59vw;
+  max-height: 845px;
+  /* height: 45.278rem; */
+  /* margin-bottom: 30px; */
+  /* margin-bottom: 1.67rem; */
+  background: url(../images/holidday2.png);
+  background-position: 100%;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+.holiday-section img {
+  width: 100%;
+}
+.holiday-heading {
+  max-width: 1116px;
+  /* max-width: 1116px; */
+  /* height: 13.61rem; */
+  text-align: center;
+  width: 77.5vw;
+  margin: 0 auto;
+}
+.bubble-wrap {
+  position: relative;
+  width: 74.5vw;
+  max-width: 1126px;
+  max-height: 595px;
+  height: 39.6vw;
+  background: url(../images/newspaper_bg.png);
+  background-position: center center;
+  background-size: auto;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+}
+.bubble {
+  position: absolute;
+  font-size: 0;
+  opacity: 0;
+  transform: translateY(25px) scale(0.9);
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
+}
+.bubble.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+.bubble.news1 {
+  width: 38vw;
+  max-width: 520px;
+  top: 11%;
+  right: -11.2%;
+}
+.bubble.news2 {
+  display: block;
+  width: 32.5rem;
+  width: 38vw;
+  height: 100%;
+  max-width: 550px;
+  top: 37%;
+  left: -19%;
+}
+.bubble.news2::before {
+  position: absolute;
+  content: "";
+  top: -16%;
+  left: 12%;
+  width: 10rem;
+  width: 16%;
+  height: 10rem;
+  background: url(../images/news_character01.svg);
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  z-index: -1;
+}
+.bubble.news3 {
+  width: 38vw;
+  max-width: 667px;
+  right: -11%;
+  bottom: -4%;
+}
+.bubble.news3::before {
+  position: absolute;
+  content: "";
+  top: 34.1%;
+  left: 68%;
+  width: 17.25rem;
+  width: 55%;
+  width: 20.5vw;
+  max-width: 310px;
+  height: 13.7rem;
+  background: url(../images/news_character02.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  z-index: 2;
+}
+
+form {
+  max-width: var(--content-width);
+  margin: 0 auto;
+}
+.form-panel {
+  width: 100%;
+  margin: 0 auto;
+  padding: 4.44445rem 3.33325rem;
+  margin-bottom: 2.775rem;
+  background: #fff;
+  background-image: url("../images/form01.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  box-sizing: border-box;
+}
 .form-title {
   font-size: 1.77775rem;
   /* font-size: 1.27775rem; */
@@ -81,6 +234,7 @@ body {
   display: block;
   font-size: 1.33rem;
   margin-left: 0;
+  margin-top: 0.88rem;
 }
 .form-group {
   padding-bottom: 44px;
@@ -272,13 +426,21 @@ input[type="checkbox"]:checked + label {
 
 /* video */
 .video_sect {
+  padding-top: 77px;
+}
+.video-heading {
+  width: 71.4vw;
+  max-width: 1028px;
+  /* margin-bottom: 70px; */
+  text-align: center;
+  margin: 0 auto;
 }
 .video-card {
   position: relative;
   width: 82vw;
   max-width: 1169px;
   height: 83vw;
-  /* max-height: 940px; */
+  max-height: 940px;
   background-image: url(../images/videoBoxBg.png);
   background-repeat: no-repeat;
   background-position: center;
